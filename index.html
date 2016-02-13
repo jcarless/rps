@@ -13,7 +13,7 @@
 
 	var computerChoices = ['r', 'p', 's'];
 
-	var win = 0;
+	var wins = 0;
 	var losses = 0;
 	var ties = 0;
 
@@ -25,25 +25,25 @@
 
 			if (userGuess == computerGuess) {
 				ties++;
-			};
+			}
 			else if ((userGuess == 'r') && (computerGuess == 's')) {
-				win++;
-			};
+				wins++;
+			}
 			else if ((userGuess == 'p') && (computerGuess == 'r')) {
-				win++;
-			};
+				wins++;
+			}
 			else if ((userGuess == 's') && (computerGuess == 'p')) {
-				win++;
-			};
+				wins++;
+			}
 			else if ((userGuess == 'r') && (computerGuess == 'p')) {
 				losses++;
-			};
+			}
 			else if ((userGuess == 'p') && (computerGuess == 's')) {
 				losses++;
-			};
+			}
 			else if ((userGuess == 's') && (computerGuess == 'r')) {
 				losses++;
-			};
+			}
 
 		var html = "<p>Press r, p or s to start playing</p>" +
 		"<p>wins: " + 
